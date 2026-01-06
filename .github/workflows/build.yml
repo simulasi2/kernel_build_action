@@ -15,7 +15,7 @@ jobs:
       - name: Build Kernel
         uses: dabao1955/kernel_build_action@main
         with:
-          kernel-url: https://github.com/RarogCmex/xiaomi-kenzo-kernel-shadowsong
+          kernel-url: https://github.com/simulasi2/xiaomi-kenzo-kernel-shadowsong
           kernel-branch: eas
           config: shadow_song_defconfig
           arch: arm64
