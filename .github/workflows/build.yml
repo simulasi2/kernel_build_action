@@ -16,9 +16,8 @@ jobs:
         uses: dabao1955/kernel_build_action@main
         with:
           kernel-url: https://github.com/RarogCmex/xiaomi-kenzo-kernel-shadowsong
-          kernel-dir: eas
-          kernel-branch: taffy
-          config: cas_defconfig
+          kernel-branch: eas
+          config: shadow_song_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: false
