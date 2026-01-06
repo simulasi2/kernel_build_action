@@ -15,15 +15,17 @@ jobs:
       - name: Build Kernel
         uses: dabao1955/kernel_build_action@main
         with:
-          kernel-url: https://github.com/AcmeUI-Devices/android_kernel_xiaomi_cas
-          kernel-dir: msm-4.19
+          kernel-url: https://github.com/RarogCmex/xiaomi-kenzo-kernel-shadowsong
+          kernel-dir: eas
           kernel-branch: taffy
           config: cas_defconfig
           arch: arm64
           aosp-gcc: true
-          aosp-clang: true
+          aosp-clang: false
           ksu: true
-          ksu-version: main
+          ksu-other: true
+          ksu-url: https://github.com/KernelSU-Next/KernelSU-Next
+          ksu-version: v1.0.5
           android-version: 12
           aosp-clang-version: r383902
           disable-lto: true
